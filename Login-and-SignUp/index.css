@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-div{
+    width: 50%;
+    height: 25rem;
+    border: 5px solid blue;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35% 65%;
+}
+.left-part{
+    height: 101%;
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50%;
+}
+.login-part a{
+    text-decoration: none;
+}
+.left-part p{
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: 'Diplomata SC', cursive;
+}
+.left-part button{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+}
+.left-part span{
+    font-size: 1.1rem;
+    font-family: 'Martian Mono', monospace;
+}
+.right-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.item p{
+    font-size: 2rem;
+}
+.item button{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    background-color: blue;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Martian Mono', monospace;
+}
+.inputs-read{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inputs-read>input{
+    margin:10px 0 10px 0;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+.signUp-part{
+    display: none;
+}
+.all-div.active .login-part{
+    display: none;
+}
+.all-div.active .signUp-part{
+    display: flex;
+}
+.all-div.active #btn-span-2{
+    display: block;
+}
+.all-div.active #btn-span-1{
+    display: none;
+}
+#btn-span-2{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .all-div{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .all-div{
+        width: 90%;
+    }
+}

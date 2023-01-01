@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="index.css">
+    <title>Login And Sign Up</title>
+</head>
+<body>
+    <div class="all-div">
+        <div class="left-part">
+            <p>Hello!</p>
+            <button class="tap" onclick="change()">
+                <span id="btn-span-1">Sign Up</span>
+                <span id="btn-span-2">Login</span>
+            </button>
+        </div>
+        <div class="right-part">
+            <div class="login-part item">
+                <p>Login</p>
+                <div class="inputs-read">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                </div>
+                <a href="#">Forgot password?</a>
+                <button id="login-btn">Login</button>
+                
+            </div>
+            <div class="signUp-part item">
+                <p>Sign Up</p>
+                <div class="inputs-read">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <button id="sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
